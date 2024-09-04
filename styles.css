@@ -1,0 +1,154 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark background and text colors */
+body {
+    background-color: #121212;
+    color: #D1D1D1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* Header styling */
+header {
+    background: #1F1F1F;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header nav h1 {
+    color: #D1D1D1;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Main content section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Set max-width to avoid extra blank space */
+    width: 100%;
+}
+
+/* Typography for the hero section */
+.hero-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #D1D1D1;
+    font-weight: 500;
+}
+
+/* Input and button styling */
+.input-group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#city-name {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background-color: #333;
+    color: #D1D1D1;
+    font-size: 1rem;
+}
+
+#search-button {
+    padding: 0.75rem 1rem;
+    background-color: #007bff;
+    color: #D1D1D1;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather result styling */
+#weather-result {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #1F1F1F;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+#weather-result h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #D1D1D1;
+}
+
+#weather-result p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #D1D1D1;
+    line-height: 1.5;
+}
+
+/* Footer styling */
+footer {
+    background: #1F1F1F;
+    padding: 1rem;
+    text-align: center;
+    color: #D1D1D1;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .hero-content h2 {
+        font-size: 1.25rem;
+    }
+
+    #search-button,
+    #city-name {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    #weather-result h2 {
+        font-size: 1rem;
+    }
+
+    #weather-result p {
+        font-size: 0.875rem;
+    }
+}
